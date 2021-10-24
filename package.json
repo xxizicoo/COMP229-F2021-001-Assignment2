@@ -7,7 +7,7 @@
     "test": "1"
   },
   "engines": {
-    "node": "^12.00.0",
+    "node": "^12.18.3",
     "npm": "^6.0.0"
   },
   "repository": {
