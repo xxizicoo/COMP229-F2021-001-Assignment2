@@ -1,0 +1,35 @@
+<!--
+Filename: login.ejs
+Student: Zicong Liang
+Student#: 301068166
+Date: 10/19/2021
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/public/css/style.css" rel="stylesheet" />
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="login">
+			
+			<%- include('../components/nav.ejs') %>
+			
+			<p  class="n-title">Login</p>
+			
+			<ul class="login-form">
+				<li><span>Username</span><input id="username" type="text" /></li>
+				<li><span>Password</span><input id="password" type="password" /></li>
+				<li><button onclick="login()">Login</button></li>
+			</ul>
+			
+			
+			
+		</div>
+		<script src="/public/js/index.js"></script>
+		<script src="/public/js/login.js"></script>
+	</body>
+</html>

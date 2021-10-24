@@ -1,0 +1,31 @@
+{
+  "name": "comp229-f2021-001-assignment2",
+  "version": "0.0.1",
+  "description": "1",
+  "main": "1",
+  "scripts": {
+    "test": "1"
+  },
+  "engines": {
+    "node": "^12.00.0",
+    "npm": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxizicoo/COMP229-F2021-001-Assignment2.git"
+  },
+  "keywords": [
+    "1"
+  ],
+  "author": "Zicong Liang",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.6",
+    "expess": "^0.0.1-security",
+    "express": "^4.17.1"
+  },
+  "bugs": {
+    "url": "https://github.com/xxizicoo/COMP229-F2021-001-Assignment2/issues"
+  },
+  "homepage": "https://github.com/xxizicoo/COMP229-F2021-001-Assignment2#readme"
+}

@@ -1,0 +1,40 @@
+<!--
+Filename: contactsManage.ejs
+Student: Zicong Liang
+Student#: 301068166
+Date: 10/19/2021
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/public/css/style.css" rel="stylesheet" />
+		<title>Contacts Manage</title>
+	</head>
+	<body>
+		<div class="contactsManage">
+			<%- include('../components/nav.ejs') %>
+			
+			<p  class="n-title">Contacts Manage</p>
+			
+			<div  class="contactsManage-content">
+				<p><span onclick="logout()">Logout</span></p>
+				<table border="1" >
+					<thead>
+						<tr>
+							<td>Name</td>
+							<td>Contact Number</td>
+							<td>Email Address</td>
+							<td>Action</td>
+						</tr>
+					</thead>
+					<tbody id="list"></tbody>
+				</table>
+			</div>
+		</div>
+		<script src="/public/js/index.js"></script>
+		<script src="/public/js/contactsManage.js"></script>
+	</body>
+</html>

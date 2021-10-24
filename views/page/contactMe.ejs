@@ -1,0 +1,41 @@
+<!--
+Filename: contactMe.ejs
+Student: Zicong Liang
+Student#: 301068166
+Date: 10/01/2021
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/public/css/style.css" rel="stylesheet" />
+		<title>Contact Me</title>
+	</head>
+	<body>
+		<div class="contactMe">
+			
+			<%- include('../components/nav.ejs') %>
+			
+			<p  class="n-title">Contact Me</p>
+			<div class="contactMe-content">
+				<ul>
+					<li><span>First Name:</span><input type="text" id="n-name" /></li>
+					<li><span>Last Name:</span><input type="text" id="n-name2" /></li>
+					<li><span>Contact Number:</span><input type="text" id="n-phone" /></li>
+					<li><span>Email Address:</span><input type="text" id="n-email" /></li>
+					<li><span>Message:</span><textarea id="n-msg"></textarea></li>
+					<li><button onclick="sub()">Submit</button></li>
+				</ul>
+				
+				
+				<img src="/public/img/location.jpg" />
+			</div>
+			
+			
+			
+		</div>
+		<script src="/public/js/index.js"></script>
+	</body>
+</html>

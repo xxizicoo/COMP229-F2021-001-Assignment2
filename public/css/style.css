@@ -1,0 +1,428 @@
+/*
+Filename: style.scss
+Student: Zicong Liang
+Student#: 301068166
+Date: 10/01/2021
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  font: inherit;
+  border: 0; }
+
+html,
+body,
+page {
+  width: 100%;
+  font-size: 12px;
+  position: relative; }
+
+ul,
+ol,
+li,
+dl,
+dd,
+dt {
+  list-style: none;
+  list-style-type: none; }
+
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  background: none; }
+
+input[type='button'],
+button {
+  cursor: pointer;
+  -moz-user-focus: none;
+  user-select: none; }
+
+input[type='text'],
+input[type='password'],
+textarea {
+  width: 100%; }
+
+a,
+i,
+a:hover,
+img,
+label {
+  text-decoration: none;
+  cursor: pointer; }
+
+table {
+  border-collapse: collapse; }
+
+html, body {
+  height: 100%; }
+
+.n-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  background: #333; }
+  .n-nav > ul {
+    color: #fff;
+    font-size: 13px;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .n-nav > ul > li {
+      cursor: pointer;
+      height: 100%;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .n-nav > ul > li:first-child {
+        margin-right: auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+        color: #fff;
+        background: #01a0ee;
+        font-size: 20px; }
+    .n-nav > ul .n-nav-this {
+      background: #fff;
+      color: #333; }
+
+.n-title {
+  margin: 40px 0;
+  font-size: 40px;
+  color: #bbb;
+  font-weight: bold;
+  text-align: center; }
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background: #fff; }
+  .about .about-content {
+    margin: 20px auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start; }
+    .about .about-content > img {
+      min-height: 300px;
+      background: #f6f6f6;
+      border-radius: 10px;
+      border: 5px solid #fff;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.05);
+      width: 300px; }
+    .about .about-content > div {
+      position: relative;
+      flex: 1;
+      min-height: 300px;
+      margin-left: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.05);
+      font-size: 14px;
+      line-height: 30px; }
+      .about .about-content > div > h1 {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 20px; }
+      .about .about-content > div button {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 100px;
+        height: 30px;
+        background: #01a0ee;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 13px; }
+
+.project {
+  width: 100%;
+  background: #fff; }
+  .project .project-list {
+    margin: 20px auto;
+    width: 1200px; }
+    .project .project-list > li {
+      max-height: 400px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      min-height: 300px;
+      border-radius: 5px;
+      align-items: stretch;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.07); }
+      .project .project-list > li > img {
+        width: 400px;
+        object-fit: cover; }
+      .project .project-list > li > div {
+        padding: 20px;
+        flex: 1; }
+        .project .project-list > li > div > h3 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          align-items: flex-end;
+          font-size: 22px;
+          color: #333; }
+          .project .project-list > li > div > h3 > span {
+            color: #ccc;
+            font-size: 13px;
+            margin-left: auto; }
+        .project .project-list > li > div > h4 {
+          font-size: 17px;
+          color: #777;
+          line-height: 150%;
+          margin: 20px 0; }
+        .project .project-list > li > div > p {
+          margin-bottom: 10px;
+          line-height: 130%;
+          font-size: 14px;
+          color: #555; }
+
+.service {
+  width: 100%;
+  background: #fff; }
+  .service .service-list {
+    margin: 20px auto;
+    width: 1200px; }
+    .service .service-list > li {
+      box-shadow: 20px 20px 30px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      overflow: hidden;
+      padding-bottom: 20px;
+      background: #fff;
+      margin-bottom: 100px;
+      width: 100%;
+      text-align: center; }
+      .service .service-list > li > img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin-bottom: 20px; }
+      .service .service-list > li > h2 {
+        font-weight: bold;
+        font-size: 30px;
+        color: #333; }
+      .service .service-list > li > p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #999; }
+        .service .service-list > li > p > span {
+          margin: 0 10px; }
+        .service .service-list > li > p button {
+          width: 100px;
+          height: 30px;
+          background: #01a0ee;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 15px; }
+
+.contactMe {
+  width: 100%;
+  height: 100vh;
+  background: #fff; }
+  .contactMe .contactMe-content {
+    margin: 20px auto;
+    width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 470px;
+    align-items: stretch;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.05); }
+    .contactMe .contactMe-content > img {
+      background: #f6f6f6;
+      width: 500px;
+      object-fit: cover; }
+    .contactMe .contactMe-content > ul {
+      flex: 1;
+      min-height: 300px;
+      background: #fff;
+      padding: 20px;
+      font-size: 16px;
+      line-height: 30px; }
+      .contactMe .contactMe-content > ul > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; }
+        .contactMe .contactMe-content > ul > li > span {
+          flex: 0 0 150px;
+          text-align: right;
+          white-space: nowrap;
+          color: #666;
+          margin-right: 20px; }
+        .contactMe .contactMe-content > ul > li > input {
+          height: 36px;
+          flex: 1;
+          color: #333;
+          padding: 0 15px;
+          border: none;
+          border-bottom: 1px solid #ddd; }
+        .contactMe .contactMe-content > ul > li button {
+          width: 100px;
+          height: 36px;
+          background: #01a0ee;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 13px; }
+        .contactMe .contactMe-content > ul > li textarea {
+          padding: 20px;
+          flex: 1;
+          border-radius: 3px;
+          height: 150px;
+          border: 1px solid #ddd; }
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .home .home-img {
+    flex: 1;
+    height: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background: url(../img/bg.jpg) no-repeat center/cover;
+    text-align: center;
+    position: relative; }
+    .home .home-img > h1 {
+      font-size: 70px;
+      font-weight: bold;
+      position: relative;
+      z-index: 10;
+      text-shadow: 0 0 30px #fff; }
+    .home .home-img > h2 {
+      text-shadow: 0 0 15px #fff;
+      font-size: 24px;
+      position: relative;
+      z-index: 10;
+      margin-top: 10px; }
+    .home .home-img::before {
+      content: ' ';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); }
+
+.login .login-form {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px 2px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  padding: 30px 20px; }
+  .login .login-form > li {
+    font-size: 16px;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .login .login-form > li + li {
+      margin-top: 20px; }
+    .login .login-form > li > span {
+      flex: 1;
+      text-align: right;
+      margin-right: 10px;
+      color: #777; }
+    .login .login-form > li > input {
+      width: 260px;
+      color: #555;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 0 10px;
+      height: 100%;
+      background: #fff; }
+    .login .login-form > li > button {
+      width: 100%;
+      height: 100%;
+      background: #01A0EE;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer; }
+
+.contactsManage .contactsManage-content {
+  width: 1000px;
+  min-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px; }
+  .contactsManage .contactsManage-content > p {
+    color: #01A0EE;
+    font-size: 14px;
+    margin-bottom: 20px; }
+    .contactsManage .contactsManage-content > p > span {
+      cursor: pointer; }
+  .contactsManage .contactsManage-content > table {
+    min-height: 100%;
+    width: 100%;
+    border-collapse: collapse; }
+    .contactsManage .contactsManage-content > table th, .contactsManage .contactsManage-content > table td {
+      border: 1px solid #ddd;
+      height: 30px;
+      padding: 0 10px; }
+
+.contactsUpdate .contactsUpdate-form {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px 2px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  padding: 30px 20px; }
+  .contactsUpdate .contactsUpdate-form > li {
+    font-size: 16px;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .contactsUpdate .contactsUpdate-form > li + li {
+      margin-top: 20px; }
+    .contactsUpdate .contactsUpdate-form > li > span {
+      flex: 1;
+      text-align: right;
+      margin-right: 10px;
+      color: #777; }
+    .contactsUpdate .contactsUpdate-form > li > input {
+      width: 260px;
+      color: #555;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 0 10px;
+      height: 100%;
+      background: #fff; }
+    .contactsUpdate .contactsUpdate-form > li > a {
+      color: #01A0EE;
+      margin-right: auto; }
+    .contactsUpdate .contactsUpdate-form > li > button {
+      flex: 1;
+      height: 100%;
+      background: #01A0EE;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer; }
+      .contactsUpdate .contactsUpdate-form > li > button + button {
+        margin-left: 20px; }
